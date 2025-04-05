@@ -1,0 +1,32 @@
+<!-- input=[['country','india'], ['state','gujarat']]
+output={
+        "country":"india",
+        "state":"gujarat"
+        } -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a={
+            "key1":"value1",
+            "key2":"value2"
+        }
+        function firstlast(a)
+        {
+            var temp={};
+            temp[a[0][0]]=a[0][1];
+            temp[a[1][0]]=a[1][1];
+            return temp;
+        }
+        var data=[['country','india'], ['state','gujarat']]
+        console.log(firstlast(data))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

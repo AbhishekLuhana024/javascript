@@ -1,0 +1,22 @@
+<!-- write one json string with date property, name and age, print date in indian standard time(ist) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function func1()
+        {
+            const obj=JSON.parse('{"dob":"1998-08-03" , "name":"xyz", "age":"20"}')
+            console.log(obj.dob);
+            a=new Date(obj.dob);
+            console.log(a)
+        }
+    </script>
+</head>
+<body>
+    <button class="btn" onclick="func1()">click me!</button>
+</body>
+</html>

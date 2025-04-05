@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<script>
+    const user={
+        "name":["ABC","DEF","GHI"],
+        "age":"28",
+        "course":["FSD-1","FSD-2","COA"],
+        "address":["T1","T2",{"T3":"Give Again"}]
+
+    }
+    console.log(user.address[2].T3)
+    console.log(user.mname)
+
+
+</script>
+
+</body>
+</html> -->
+<!-- write one jason string with a date property yyyy/mm/dd and print the date in IST -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<script>
+    function call(){
+        const obj=JSON.parse('{"name":"XYZ","age":"17","dob":"1997-03-14"}');
+        obj1=new Date(obj.dob);
+        document.getElementById("demo").innerHTML=obj1
+    }
+    </script>
+
+<body>
+<p id="demo"></p>   
+<button onclick="call()">Click Button</button>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+    <script>
+        const sub={"FSD":[{"Topic":"HTML","course":"Beginer","content":["tags","table","form"] },{"Topic":"css","course":"Beginer","content":["tags","table","form"]}]};
+        console.log("//using for...in loop");
+        for(x in sub.FSD){
+            for(y in sub.FSD[x]){
+                console.log(sub.FSD[x][y]+"<br>");
+            }
+        }    
+            </script>
+</body>
+</html> -->
+<!-- write json obj which contain array of 3 objects  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<script>
+    const Student=[{"name":"janaam","Age":"17"},{"name":"nikhil","Age":"18"},{"name":"jay","Age":"19"}]
+    console.log(Student.sort((a,b)=>b.Age-a.Age))
+
+</script>
+
+</body>
+</html> -->
+<!-- 
+write a function names firstlast it takes an array and return an object with the below condition 
+1- the first element of an array must be object's key and last element of an array must be the key's value 
+Input=["abc","def","ghi"]-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<script>
+    function firstlast(a){
+        var temp={};
+        temp[a[0]]=a[a.length-1];
+        return temp;
+
+    }
+    var data=["abc","def","ghi"];
+    console.log(firstlast(data))
+</script>
+</body>
+</html> -->
+
+<!-- create a file to store an array of objects having highest height -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<script>
+    const person=[{"Name":"Janaam","Height":"5.2"},{"Name":"Rishi","Height":"6.2"},{"Name":"Roy","Height":"6.3"}]
+    function gethighestperson(person){
+        return Math.max(...person.map(obj=>obj.Height));
+    }
+    console.log(gethighestperson(person))
+</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<script>
+    const a ={
+        "A":"LJU","B":["CSE","IT","CE"],"C":[{"D":"Hi","E":["are",4,{"f":["sem","we"]}]}],"G":{"H":"Students","I":["of","!"]},"J":[{"K":"python","L":"branch"},"FSD-2"]
+    } 
+    console.log(a.c[0].D,a.G.I[1]+""+a.c[0].E[2].F[1]+""+a.c[0])
+</script>
+</body>
+</html>

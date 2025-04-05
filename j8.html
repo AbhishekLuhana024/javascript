@@ -1,0 +1,29 @@
+<!-- write a function named firstlast that takes an array and returns an object with below conditions:
+1. the first element of an array must be an object key
+2. the last elemennt of an array must be key values -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a={
+            "key1":"value1",
+            "key2":"value2"
+        }
+        function firstlast(a)
+        {
+            var temp={};
+            temp[a[0]]=a[a.length-1];
+            return temp;
+        }
+        var data=['abc','def','ghi','jkl']
+        console.log(firstlast(data))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- write a js to store an array of objects having height and name, display highest height -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const data=
+        [
+            {
+                "name":"xyz",
+                "height":5.2,
+            },
+            {
+                "name":"pqr",
+                "height":5.8,
+            },
+            {
+                "name":"abc",
+                "height":5.4,
+            },
+        ];
+        function gethighest(data)
+        {
+            return Math.max(...data.map(obj=>obj.height));
+        }
+        console.log(gethighest(data))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

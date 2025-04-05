@@ -1,0 +1,23 @@
+<!-- initialize two variables and increment both the variables and display the addition of both variables at interval of 1 second -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=2;
+        var b=5;
+        function myfun(){
+            document.getElementById("p1").innerHTML=a+b;
+            a++;
+            b++;
+        }
+        setInterval(myfun, 100)
+    </script>
+</head>
+<body>
+    <p id="p1"></p>
+</body>
+</html>
